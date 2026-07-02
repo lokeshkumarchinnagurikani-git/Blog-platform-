@@ -1,1 +1,37 @@
 # Blog-platform-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog Platform</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>My Blog Platform</h1>
+<p>Create and share your thoughts</p>
+</header>
+
+<div class="container">
+
+<div class="create-post">
+<h2>Create Blog Post</h2>
+
+<input type="text" id="title" placeholder="Post Title">
+
+<textarea id="content" placeholder="Write your blog..."></textarea>
+
+<button onclick="addPost()">Publish</button>
+</div>
+
+<div id="posts"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
