@@ -9,6 +9,63 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    background-color:#FFF9C4; /* Light Yellow */
+    color:#333;
+}
+
+header{
+    background:#FFD54F;
+    color:#333;
+    padding:15px;
+}
+
+.posts{
+    background:#FFFDE7;
+    padding:20px;
+    margin:20px;
+    border-radius:10px;
+}
+
+.post{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+.comment{
+    background:#FFF8E1;
+    padding:10px;
+    margin-top:10px;
+    border-radius:5px;
+}
+
+textarea{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#FBC02D;
+    color:#333;
+    border:none;
+    padding:10px 20px;
+    margin-top:10px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#F9A825;
+}
 
 <header>
 <div class="logo">Blog Platform</div>
