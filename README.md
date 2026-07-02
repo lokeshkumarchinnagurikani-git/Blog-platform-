@@ -59,6 +59,66 @@
 <title>Login</title>
 <link rel="stylesheet" href="style.css">
 </head>
+<section class="posts">
+
+    <h2>Latest News</h2>
+
+    <div class="post">
+
+        <h3>Technology is Growing Rapidly</h3>
+
+        <p>
+            Artificial Intelligence, Full Stack Development, and Cloud Computing
+            are transforming the software industry. Students are encouraged to
+            learn modern technologies to improve their career opportunities.
+        </p>
+
+        <h4>Comments</h4>
+
+        <div class="comment">
+            <strong>Rahul:</strong> Great article!
+        </div>
+
+        <div class="comment">
+            <strong>Priya:</strong> Very informative.
+        </div>
+
+        <textarea id="commentBox"
+        placeholder="Write your comment..."></textarea>
+
+        <button onclick="addComment()">
+            Post Comment
+        </button>
+
+        <div id="newComments"></div>
+
+    </div>
+
+</section>
+
+<script>
+function addComment(){
+
+let text=document.getElementById("commentBox").value;
+
+if(text===""){
+alert("Please write a comment.");
+return;
+}
+
+let div=document.createElement("div");
+
+div.className="comment";
+
+div.innerHTML="<strong>You:</strong> "+text;
+
+document.getElementById("newComments").appendChild(div);
+
+document.getElementById("commentBox").value="";
+
+}
+</script>
+
 
 <body>
 
