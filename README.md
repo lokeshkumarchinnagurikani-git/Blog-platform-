@@ -1,3 +1,143 @@
+<section class="posts">
+
+    <h2>Latest News</h2>
+
+    <div class="post">
+    <header class="hero">
+
+    <h1 class="main-title">NEW C</h1>
+
+    <p class="sub-title">Post the News Only</p>
+
+</header>
+.main-title{
+    font-size:60px;
+    font-weight:bold;
+    color:#ffffff;
+    text-align:center;
+    margin-bottom:8px;
+    letter-spacing:3px;
+}
+
+.sub-title{
+    font-size:20px;
+    font-style:italic;
+    color:#f8f8f8;
+    text-align:center;
+    margin-top:0;
+    font-weight:400;
+}
+
+        <h3>Technology is Growing Rapidly</h3>
+
+        <p>
+            Artificial Intelligence, Full Stack Development, and Cloud Computing
+            are transforming the software industry. Students are encouraged to
+            learn modern technologies to improve their career opportunities.
+        </p>
+
+        <h4>Comments</h4>
+
+        <div class="comment">
+            <strong>Rahul:</strong> Great article!
+        </div>
+
+        <div class="comment">
+            <strong>Priya:</strong> Very informative.
+        </div>
+
+        <textarea id="commentBox"
+        placeholder="Write your comment..."></textarea>
+
+        <button onclick="addComment()">
+            Post Comment
+        </button>
+
+        <div id="newComments"></div>
+
+    </div>
+
+</section>
+
+<script>
+function addComment(){
+
+let text=document.getElementById("commentBox").value;
+
+if(text===""){
+alert("Please write a comment.");
+return;
+}
+
+let div=document.createElement("div");
+
+div.className="comment";
+
+div.innerHTML="<strong>You:</strong> "+text;
+
+document.getElementById("newComments").appendChild(div);
+
+document.getElementById("commentBox").value="";
+
+}
+</script>
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    background-color:#FFF9C4; /* Light Yellow */
+    color:#333;
+}
+
+header{
+    background:#FFD54F;
+    color:#333;
+    padding:15px;
+}
+
+.posts{
+    background:#FFFDE7;
+    padding:20px;
+    margin:20px;
+    border-radius:10px;
+}
+
+.post{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+.comment{
+    background:#FFF8E1;
+    padding:10px;
+    margin-top:10px;
+    border-radius:5px;
+}
+
+textarea{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#FBC02D;
+    color:#333;
+    border:none;
+    padding:10px 20px;
+    margin-top:10px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#F9A825;
+}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -135,236 +275,6 @@ Only registered users can post news.
 </body>
 
 </html>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#d9fdd3;
-background-image:url("namaskar.jpg");
-background-size:cover;
-background-position:center;
-background-attachment:fixed;
-color:#222;
-}
-
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 40px;
-background:rgba(0,120,0,0.8);
-}
-
-.logo{
-font-size:32px;
-font-weight:bold;
-color:white;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-font-size:18px;
-font-weight:bold;
-}
-
-nav a:hover{
-color:yellow;
-}
-
-.hero{
-height:90vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-}
-
-.overlay{
-background:rgba(0,0,0,.45);
-padding:60px;
-border-radius:15px;
-}
-
-.main-title{
-font-size:70px;
-color:white;
-letter-spacing:5px;
-margin-bottom:10px;
-}
-
-.sub-title{
-font-size:22px;
-font-style:italic;
-color:#f5f5f5;
-margin-bottom:30px;
-}
-
-.btn{
-display:inline-block;
-padding:12px 30px;
-margin:10px;
-background:#28a745;
-color:white;
-text-decoration:none;
-border-radius:8px;
-font-size:18px;
-font-weight:bold;
-transition:.3s;
-}
-
-.btn:hover{
-background:#1b7d32;
-}
-
-.about{
-width:90%;
-max-width:1000px;
-margin:40px auto;
-padding:30px;
-background:rgba(255,255,255,.9);
-border-radius:12px;
-text-align:center;
-}
-
-.about h2{
-margin-bottom:15px;
-color:#006400;
-}
-
-.features{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-width:90%;
-margin:40px auto;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 5px 10px rgba(0,0,0,.2);
-text-align:center;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card h3{
-color:#0a7c2f;
-margin-bottom:15px;
-}
-
-.form-container{
-width:380px;
-margin:60px auto;
-background:rgba(255,255,255,.95);
-padding:30px;
-border-radius:12px;
-box-shadow:0 5px 12px rgba(0,0,0,.2);
-}
-
-.form-container h2{
-text-align:center;
-margin-bottom:20px;
-color:#006400;
-}
-
-input,textarea{
-width:100%;
-padding:12px;
-margin:10px 0;
-border:1px solid #aaa;
-border-radius:6px;
-font-size:16px;
-}
-
-textarea{
-height:180px;
-resize:none;
-}
-
-button{
-width:100%;
-padding:12px;
-background:#28a745;
-color:white;
-border:none;
-border-radius:6px;
-font-size:18px;
-cursor:pointer;
-}
-
-button:hover{
-background:#1b7d32;
-}
-
-.post{
-background:white;
-padding:20px;
-margin:20px auto;
-width:90%;
-border-radius:10px;
-box-shadow:0 3px 8px rgba(0,0,0,.2);
-}
-
-.post h3{
-color:#006400;
-margin-bottom:10px;
-}
-
-.comment{
-background:#eafbe7;
-padding:10px;
-margin-top:10px;
-border-left:5px solid green;
-border-radius:5px;
-}
-
-footer{
-background:rgba(0,120,0,.8);
-color:white;
-text-align:center;
-padding:18px;
-margin-top:40px;
-}
-
-@media(max-width:768px){
-
-header{
-flex-direction:column;
-}
-
-nav{
-margin-top:15px;
-}
-
-nav a{
-display:block;
-margin:10px 0;
-}
-
-.main-title{
-font-size:45px;
-}
-
-.sub-title{
-font-size:18px;
-}
-
-.overlay{
-padding:35px;
-}
-
-}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -414,166 +324,6 @@ Register
 </body>
 </html>
 
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-
-<title>Register - NEW C</title>
-
-<link rel="stylesheet"
-href="style.css">
-
-</head>
-
-<body>
-
-<div class="form-container">
-
-<h2>Create Customer Account</h2>
-
-<form id="registerForm">
-
-<input
-type="text"
-id="name"
-placeholder="Full Name"
-required>
-
-<input
-type="email"
-id="email"
-placeholder="Email"
-required>
-
-<input
-type="password"
-id="password"
-placeholder="Password"
-required>
-
-<button type="submit">
-
-Register
-
-</button>
-
-<p style="text-align:center;margin-top:15px;">
-
-Already Registered?
-
-<a href="login.html">
-
-Login
-
-</a>
-
-</p>
-
-</form>
-
-</div>
-
-<script src="script.js"></script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-
-<title>Dashboard - NEW C</title>
-
-<link rel="stylesheet"
-href="style.css">
-
-</head>
-
-<body>
-
-<header>
-
-<div class="logo">
-NEW C
-</div>
-
-<nav>
-
-<a href="index.html">
-Home
-</a>
-
-<a href="#" onclick="logout()">
-Logout
-</a>
-
-</nav>
-
-</header>
-
-<div class="container">
-
-<h2 style="text-align:center;color:green;">
-Post Today's News
-</h2>
-
-<form id="newsForm">
-
-<input
-type="text"
-id="newsTitle"
-placeholder="News Title"
-required>
-
-<textarea
-id="newsContent"
-placeholder="Write your news here..."
-required></textarea>
-
-<button type="submit">
-
-Post News
-
-</button>
-
-</form>
-
-<hr>
-
-<div id="newsContainer">
-
-<!-- News will appear here -->
-
-</div>
-
-</div>
-
-<footer>
-
-<p>
-
-© 2026 NEW C | Post the News Only
-
-</p>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
 const registerForm=document.getElementById("registerForm");
 const loginForm=document.getElementById("loginForm");
 const newsForm=document.getElementById("newsForm");
@@ -775,6 +525,8 @@ localStorage.removeItem("currentUser");
 window.location="login.html";
 
 }
+
+
 
 
 
