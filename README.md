@@ -8,7 +8,6 @@
     <h1 class="main-title">NEW C</h1>
 
     <p class="sub-title">Post the News Only</p>
-
 </header>
 .main-title{
     font-size:60px;
