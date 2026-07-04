@@ -6,8 +6,7 @@
     <header class="hero">
 
      
-
-         
+        
 
 .comment{
     background:#FFF8E1;
