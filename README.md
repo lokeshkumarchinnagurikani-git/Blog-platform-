@@ -46,9 +46,7 @@
 
 </nav>
 
-</header>
-
-<!-- ================= HERO ================= -->
+</header
 
 <section class="hero">
 
@@ -67,7 +65,6 @@ with images.
 
 </section>
 
-<!-- ================= TODAY NEWS ================= -->
 
 <section class="today-news">
 
